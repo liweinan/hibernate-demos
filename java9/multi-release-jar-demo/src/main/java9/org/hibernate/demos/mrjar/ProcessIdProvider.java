@@ -4,7 +4,7 @@
  */
 package org.hibernate.demos.mrjar;
 
-import java.lang.ProcessHandle;
+//import java.lang.ProcessHandle;
 
 /**
  * @author Gunnar Morling
@@ -12,7 +12,9 @@ import java.lang.ProcessHandle;
 public class ProcessIdProvider {
 
 	public ProcessIdDescriptor getPid() {
-		long pid = ProcessHandle.current().getPid();
+		// long pid = ProcessHandle.current().getPid();
+
+		long pid = 1;
 		return new ProcessIdDescriptor( pid, "ProcessHandle" );
 	}
 }
